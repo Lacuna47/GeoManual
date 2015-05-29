@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical"
+            android:id="@+id/linearLayout2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="40dp"
+            android:layout_width="fill_parent"
+            android:layout_height="197dp">
+            <TextView android:layout_width="wrap_content"
+                android:text="Напишите нам:"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:gravity="left"
+                android:textSize="10pt"
+                android:textStyle="normal"></TextView>
+            <EditText
+                android:id="@+id/emailaddress"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="nightofthewhisper@gmail.com"></EditText>
+            <EditText android:id="@+id/emailtext"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Ваш отзыв..."></EditText>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/action_button"
+                android:id="@+id/send_button"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
