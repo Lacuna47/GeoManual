@@ -45,7 +45,9 @@ public class MainActivity extends ActionBarActivity implements ActionBar.OnNavig
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         getSupportActionBar().setTitle("");
-
+        viewPager = (ViewPager) findViewById(R.id.view_pager);
+        geoFragmentAdapter = new GeoFragmentAdapter(getSupportFragmentManager(), this);
+        viewPager.setAdapter(geoFragmentAdapter);
 
         final ActionBar bar = getSupportActionBar();
         bar.setNavigationMode(ActionBar.NAVIGATION_MODE_LIST);
